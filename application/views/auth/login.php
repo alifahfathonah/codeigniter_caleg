@@ -46,7 +46,10 @@
                             <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4"><?= TITLE_BAR ?></h1>
+                                        <h1 class="h4 text-gray-900 mb-4">
+                                            <img class="img-profile" width="40%" src="<?= base_url('asset/img/user.png') ?>"><br>
+                                            <?= TITLE_BAR ?>
+                                        </h1>
                                     </div>
                                     <form class="user" action="<?= site_url('auth/login') ?>" method="post">
                                         <div class="form-group">

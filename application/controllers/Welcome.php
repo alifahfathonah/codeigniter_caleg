@@ -46,11 +46,11 @@ class Welcome extends CI_Controller
 
 	public function saksi($param='lihat', $id)
 	{
-		$data = array(
-			'saksi' => $this->db->where('id_sks', $id)->get('saksi')->row(), 
-		);
-
 		if ($param == 'lihat') {
+			$data = array(
+				'saksi' => $this->db->where('id_sks', $id)->get('saksi')->row(), 
+			);
+
 			$this->load->view('caleg/lihat_saksi', $data);
 		}
 		elseif ($param == 'hapus') {

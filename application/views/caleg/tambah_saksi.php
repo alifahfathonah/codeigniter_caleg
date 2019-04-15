@@ -2,6 +2,19 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+            <?php if(isset($error)): ?>
+            <div class="row justify-content-center mt-6">
+                <div class="col-sm-5">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong><?= $error ?></strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
+
             <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                 <h1 class="h3 mb-0 text-center text-gray-800">Tambah Saksi </h1>

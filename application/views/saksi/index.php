@@ -25,7 +25,7 @@
                         </div>
                         <div class="form-group">
                             <label for="txt_tps">TPS</label>
-                            <input type="text" class="form-control" name="txt_tps" required>
+                            <input type="number" class="form-control" name="txt_tps" required>
                         </div>
                         <div class="form-group">
                             <label for="txt_jum">Jumlah Suara</label>
@@ -46,6 +46,7 @@
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <strong>TPS <?= $suara->tps_sra ?></strong><strong>SUARA: <?= $suara->jum_sra ?></strong>
                         <div class="float-right">
+                            <a href="<?= site_url('saksi/lihat/ubah/'.$suara->id_sra) ?>"><i class="fa fa-edit"></i></a> &nbsp;
                             <a href="<?= site_url('saksi/lihat/hapus/'.$suara->id_sra) ?>"><i class="fa fa-trash"></i></a>
                         </div>
                     </li>

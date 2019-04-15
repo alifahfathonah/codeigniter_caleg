@@ -53,11 +53,22 @@
             </div>
 
             <div class="row">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <p class="card-text">Rekapitulasi Data Lebih Cepat dan Realtime, Tambahkan Saksi Sekarang Juga!</p>
-                        <a href="<?= site_url('welcome/caleg/tambah') ?>" class="btn btn-primary"><i class="fa fa-plus"></i> &nbsp; Input Saksi</a>
-                        <a href="<?= site_url('welcome/caleg/daftar-saksi') ?>" class="btn btn-warning"><i class="fa fa-eye"></i> &nbsp; Daftar Saksi</a>
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text">Rekapitulasi Data Lebih Cepat dan Realtime, Tambahkan Saksi Sekarang Juga!</p>
+                            <a href="<?= site_url('welcome/caleg/tambah') ?>" class="btn btn_sm btn-primary"><i class="fa fa-plus"></i> &nbsp; Input Saksi</a>
+                            <a href="<?= site_url('welcome/caleg/daftar-saksi') ?>" class="btn btn_sm btn-warning"><i class="fa fa-eye"></i> &nbsp; Daftar Saksi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <a href="" class="btn btn-block btn-success"><i class="fa fa-undo"></i> &nbsp; Refresh</a>
+                        </div>
                     </div>
                 </div>
             </div>
